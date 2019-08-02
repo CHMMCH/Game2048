@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">2048 demo3.7</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">金手指</string>
+</resources>
