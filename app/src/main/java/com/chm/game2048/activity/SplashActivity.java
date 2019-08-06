@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity implements Animation.Anima
         setContentView(R.layout.activity_splash2);
 
         //动态动画
-        ImageView splashImage = (ImageView) findViewById(R.id.imgLogo);
+        ImageView splashImage = findViewById(R.id.imgLogo);
         Animation animation = new ScaleAnimation(1.0f, 1.2f, 1.0f, 1.2f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f); // 将图片放大1.2倍，从中心开始缩放
         animation.setDuration(5000); // 动画持续时间
         animation.setFillAfter(true); // 动画结束后停留在结束的位置
@@ -47,7 +47,7 @@ public class SplashActivity extends AppCompatActivity implements Animation.Anima
 //        layout.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
 
 
-        bt1=(Button)findViewById(R.id.bt1);
+        bt1= findViewById(R.id.bt1);
         new Thread(new MyCountDownTimer()).start();    //开始执行10s方法
 
 

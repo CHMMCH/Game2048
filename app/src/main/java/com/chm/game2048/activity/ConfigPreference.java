@@ -42,10 +42,10 @@ public class ConfigPreference extends Activity implements OnClickListener {
     }
 
     private void initView() {
-        mBtnGameLines = (Button) findViewById(R.id.btn_gamelines);
-        mBtnGoal = (Button) findViewById(R.id.btn_goal);
-        mBtnBack = (Button) findViewById(R.id.btn_back);
-        mBtnDone = (Button) findViewById(R.id.btn_done);
+        mBtnGameLines =  findViewById(R.id.btn_gamelines);
+        mBtnGoal =  findViewById(R.id.btn_goal);
+        mBtnBack =  findViewById(R.id.btn_back);
+        mBtnDone =  findViewById(R.id.btn_done);
         mBtnGameLines.setText("" + Config.mSp.getInt(Config.KEY_GAME_LINES, 4));
         mBtnGoal.setText("" + Config.mSp.getInt(Config.KEY_GAME_GOAL, 2048));
         mBtnGameLines.setOnClickListener(this);

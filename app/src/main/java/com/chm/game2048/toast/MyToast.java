@@ -13,7 +13,7 @@ public class MyToast {
 
     private MyToast(Context context, CharSequence text, int duration) {
         View v = LayoutInflater.from(context).inflate(R.layout.toast, null);
-        TextView textView = (TextView) v.findViewById(R.id.toastTV);
+        TextView textView =  v.findViewById(R.id.toastTV);
         textView.setText(text);
         mToast = new Toast(context);
         mToast.setDuration(duration);

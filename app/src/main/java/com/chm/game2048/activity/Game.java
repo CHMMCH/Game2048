@@ -74,10 +74,10 @@ public class Game extends Activity implements OnClickListener {
         // 初始化View
         initView();
         mGameView = new GameView(this);
-//        FrameLayout frameLayout = (FrameLayout) findViewById(R.id.game_panel);
+//        FrameLayout frameLayout = findViewById(R.id.game_panel);
 //        frameLayout.addView(mGameView);
         // 为了GameView能居中
-        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.game_panel_rl);
+        RelativeLayout relativeLayout = findViewById(R.id.game_panel_rl);
         relativeLayout.addView(mGameView);
     }
 
@@ -111,12 +111,12 @@ public class Game extends Activity implements OnClickListener {
      * 初始化View
      */
     private void initView() {
-        mTvScore = (TextView) findViewById(R.id.scroe);
-        mTvGoal = (TextView) findViewById(R.id.tv_Goal);
-        mTvHighScore = (TextView) findViewById(R.id.record);
-        mBtnRestart = (Button) findViewById(R.id.btn_restart);
-        mBtnRevert = (Button) findViewById(R.id.btn_revert);
-        mBtnOptions = (Button) findViewById(R.id.btn_option);
+        mTvScore =  findViewById(R.id.scroe);
+        mTvGoal =  findViewById(R.id.tv_Goal);
+        mTvHighScore = findViewById(R.id.record);
+        mBtnRestart =  findViewById(R.id.btn_restart);
+        mBtnRevert =  findViewById(R.id.btn_revert);
+        mBtnOptions = findViewById(R.id.btn_option);
         mBtnRestart.setOnClickListener(this);
         mBtnRevert.setOnClickListener(this);
         mBtnOptions.setOnClickListener(this);
