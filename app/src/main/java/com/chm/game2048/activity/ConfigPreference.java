@@ -113,7 +113,7 @@ public class ConfigPreference extends Activity implements OnClickListener {
 
     public void lxzz(View v){
 
-        Toast.makeText(ConfigPreference.this,"16计算机2班陈泓谋",Toast.LENGTH_LONG).show();
+        Toast.makeText(ConfigPreference.this,"chmmc6",Toast.LENGTH_LONG).show();
     }
 
     @Override
